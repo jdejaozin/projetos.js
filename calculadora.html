@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='CSS/calculadora.css'>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id='calculadora'>
+        <div id='visor'>
+            <input type='text' value='' id='resultado'>
+        </div>
+        <div id='teclado'>
+            <div id='teclado-linha'>
+                <div id='teclado-botao' onClick="clicou('+')">+</div>
+                <div id='teclado-botao' onClick="clicou('1')">1</div>
+                <div id='teclado-botao' onClick="clicou('2')">2</div>
+                <div id='teclado-botao' onClick="clicou('3')">3</div>
+            </div>
+            <div id='teclado-linha'>
+                <div id='teclado-botao' onClick="clicou('-')">-</div>
+                <div id='teclado-botao' onClick="clicou('4')">4</div>
+                <div id='teclado-botao' onClick="clicou('5')">5</div>
+                <div id='teclado-botao' onClick="clicou('6')">6</div>
+            </div>
+            <div id='teclado-linha'>
+                <div id='teclado-botao' onClick="clicou('*')">X</div>
+                <div id='teclado-botao' onClick="clicou('7')">7</div>
+                <div id='teclado-botao' onClick="clicou('8')">8</div>
+                <div id='teclado-botao' onClick="clicou('9')">9</div>
+            </div>
+            <div id='teclado-linha'>
+                <div id='teclado-botao' onClick="clicou('/')">/</div>
+                <div id='teclado-botao' onClick="clicou('0')">0</div>
+                <div id='teclado-botao' onClick="clicou('.')">.</div>
+                <div id='teclado-botao' onClick="igual()">=</div>
+            </div>
+            <div id='teclado-linha'>
+                <div id='teclado-botao-limpar' onClick="limpar()">LIMPAR</div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/calculadora.js"></script>
+</body>
+</html>
