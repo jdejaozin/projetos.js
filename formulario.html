@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel='stylesheet' href='CSS/formulario.css'>
+</head>
+<body>
+    <div class='screen'>
+        <div class='leftSide'>
+            <img src='Images/formulario.jpg' alt=''>
+        </div>
+        <div class='rightSide'>
+            <h1>Crie uma conta</h1>
+            <form method="POST" action="cadastro.PHP" class='validate'>
+                <!--Action envia para o arquivo de servidor que irá receber os dados
+                Neste caso o arquivo não existe, é somente um exemplo didático-->
+                <label>
+                    Nome:<br/>
+                    <input type='text' name="name" data-rules="required|min=2" />
+                </label>
+                <label>
+                    E-mail:<br/>
+                    <input type="text" name="email" data-rules="required|email"/>
+                </label>
+                <label>
+                    Senha:<br/>
+                    <input type="password" name="password" class='password' data-rules="required|min=4"/>
+                </label>
+                <label>
+                    Digite novamente a senha:<br/>
+                    <input type="password" data-rules="equal"/>
+                </label>
+                <label>
+                    <input id='submit' type="submit" value="Cadastrar"/>
+                </label>
+            </form>
+            <div>
+                Já possui uma conta? <a id='loguin' href=""><strong>Entre aqui</strong></a>
+            </div>
+        </div>
+    </div>
+    
+    <script src='JS/formulario.js'></script>
+</body>
+</html>
