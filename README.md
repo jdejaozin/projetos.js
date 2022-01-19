@@ -1,6 +1,6 @@
 # projetos.js
 
-Calculadora (calculadora.html) - Ferramenta criada com o foco nas operações e alterações visuais utlizando JavaScript puro.
+Site responsivo (siteResponsivo.html) - Site criado com HTML, CSS e JavaScript com responsividade mobile.
 
 Formulário (formulario.html) - Ferramenta criada com o foco em validações utlizando JavaScript puro.
 
